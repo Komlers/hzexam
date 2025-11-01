@@ -1,30 +1,26 @@
 // Sidebar
 document.getElementById("sidebar").innerHTML = `
 <h3>目录</h3>
+<p><a href="1.html">① 下载安装练习程序</a></p>
 <ul>
-    <li><a href="#">帮助文档：主页面</a></li>
-    <ul>
-        <li><a href="https://ek457.github.io/qos/docs/">官网文档</a></li>
-        <li><a href="https://github.com/ElofHew/QOS/wiki/Home/" target="_blank">GitHub Wiki</a></li>
-        <li><a href="https://gitee.com/ElofHew/QOS/wikis/Home/" target="_blank">Gitee Wiki</a></li>
-    </ul>
-    <li><a href="#">配置环境帮助文档</a></li>
-    <ul>
-        <li><a href="1-1.html">安装Python3</a></li>
-        <li><a href="1-2.html">配置虚拟环境</a></li>
-        <li><a href="1-3.html">更换pip镜像源</a></li>
-    </ul>
-    <li><a href="#">用户使用帮助文档</a></li>
-    <ul>
-        <li><a href="2-1.html">快速入门</a></li>
-        <li><a href="2-2.html">激活帮助</a></li>
-        <li><a href="2-3.html">命令帮助</a></li>
-    </ul>
+    <li><a href="1-1.html">1.1 常规安装</a></li>
+    <li><a href="1-2.html">1.2 免安装版</a></li>
 </ul>
-<h3>仓库</h3>
+<p><a href="2.html">② 下载安装依赖软件</a></p>
 <ul>
-    <li><a href="https://github.com/ElofHew/QOS" target="_blank">GitHub</a></li>
-    <li><a href="https://gitee.com/ElofHew/QOS" target="_blank">Gitee</a></li>
+    <li><a href="2-1.html">2.1 安装 Python3.4</a></li>
+    <li><a href="2-2.html">2.2 安装 WPS Office</a></li>
+</ul>
+<p><a href="3.html">③ 一些常见问题</a></p>
+<ul>
+    <li><a href="3-1.html">3.1 “生成考卷”时报错</a></li>
+    <li><a href="3-2.html">3.2 右键菜单无“编辑”</a></li>
+    <li><a href="3-3.html">3.3 “答题文件不存在”</a></li>
+</ul>
+<p><a href="4.html">④ 练习试题答案</a></p>
+<ul>
+    <li><a href="4-1.html">4.1 2024年题库答案</a></li>
+    <li><a href="4-2.html">4.2 Python试题答案</a></li>
 </ul>
 `;
 
@@ -34,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container');
 
     function adjustSidebarAndContainerOnLoad() {
-        if (window.innerWidth > 800) {3
+        if (window.innerWidth > 800) {
             sidebar.style.display = 'block';
             sidebarToggleLink.innerHTML = '收起目录';
             container.style.marginLeft = '260px';

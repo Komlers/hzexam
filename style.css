@@ -8,7 +8,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
     height: 50px;
     position: fixed;
     top: 0;
@@ -60,7 +60,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .container {
-    margin: 66px auto 0 auto;
+    margin: 75px auto 0 auto;
     padding: 0 20px;
 }
 
@@ -82,7 +82,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .scroll-offset {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 60px;
 }
 
 .sidebar {
@@ -108,11 +108,12 @@ a, a:hover, a:active, a:visited {
 
 .sidebar li {
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .sidebar a {
     display: block;
-    background-color: #007bff;
+    background-color: rgb(0, 123, 255);
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -121,22 +122,19 @@ a, a:hover, a:active, a:visited {
 }
 
 .sidebar a:hover {
-    background-color: #0056b3;
+    background-color: rgb(0, 86, 179);
 }
 
-.sidebar ul ul {
-    margin-left: 20px;
+.sidebar li a {
+    background-color: rgb(108, 117, 125);
 }
 
-.sidebar ul ul a {
-    background-color: #6c757d;
-}
-
-.sidebar ul ul a:hover {
-    background-color: #545b62;
+.sidebar li a:hover {
+    background-color: rgb(52, 52, 52);
 }
 
 footer {
     color:rgb(102, 102, 102);
     text-align: center;
+    margin: 20px 10px;
 }
