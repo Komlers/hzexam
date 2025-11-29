@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sidebar.style.display = 'block';
             sidebarToggleLink.innerHTML = '收起目录';
             if (window.innerWidth > 800) {
-                container.style.marginLeft = '260px';
+                container.style.marginLeft = '280px';
             }
         } else {
             sidebar.style.display = 'none';
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         if (sidebar.style.display === 'block') {
             if (window.innerWidth > 800) {
-                container.style.marginLeft = '260px';
+                container.style.marginLeft = '280px';
             } else {
                 container.style.marginLeft = '0';
             }
