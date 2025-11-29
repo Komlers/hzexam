@@ -14,8 +14,10 @@ document.getElementById("sidebar").innerHTML = `
 <p><a href="3.html">③ 一些常见问题</a></p>
 <ul>
     <li><a href="3-1.html">3.1 “生成考卷”时报错</a></li>
-    <li><a href="3-2.html">3.2 右键菜单无“编辑”</a></li>
-    <li><a href="3-3.html">3.3 “答题文件不存在”</a></li>
+    <li><a href="3-2.html">3.2 “答题文件不存在”</a></li>
+    <li><a href="3-3.html">3.3 “IDLE常见问题”</a></li>
+    <li><a href="3-4.html">3.4 “找不到Python”</a></li>
+    <li><a href="3-5.html">3.5 “WPS文件打不开”</a></li>
 </ul>
 <p><a href="4.html">④ 练习试题答案</a></p>
 <ul>
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth > 800) {
             sidebar.style.display = 'block';
             sidebarToggleLink.innerHTML = '收起目录';
-            container.style.marginLeft = '260px';
+            container.style.marginLeft = '280px';
         } else {
             sidebar.style.display = 'none';
             sidebarToggleLink.innerHTML = '展开目录';
