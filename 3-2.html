@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="github-markdown.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="doc.css">
-    <title>3.1 “生成考卷”时报错 - 菏泽初中信息技术考试练习系统安装教程 - Dan_Evan's Website</title>
+    <title>3.2 “答题文件不存在” - 菏泽初中信息技术考试练习系统安装教程 - Dan_Evan's Website</title>
 </head>
 <body>
     <!-- 标题栏 -->
     <div class="header" id="header">
-        <b><a href="https://elofhew.github.io/">Dan_Evan's Website</a></b>
+        <b><a href="https://elofhew.github.io/">DE's Website</a></b>
         <div class="header-right">
             <a href="index.html">首页</a>
             <a href="#sidebar">展开目录</a>
@@ -25,15 +25,21 @@
     <!-- 内容 -->
     <div class="container">
         <div class="markdown-body">
-            <h1>2.1 安装 Python 3.4</h1>
-            <div class="scroll-offset" id="step1">
+            <h1>3.2 “答题文件不存在”</h1>
+            <div class="scroll-offset" id="reason">
+                <h2>原因分析</h2>
+                <p>当你<b>以管理员身份运行</b>练习程序时，你会发现，<a href="3-1.html">3.1 “生成考卷”报错</a>错误解决了。但是在模拟考试完成后，你会发现，<b>WPS题目会提示“答题文件不存在”</b>。</p>
+                <img src="img/3/3-2-1.png" alt="提示答题文件不存在" />
+                <p class="pic_tip">提示答题文件不存在</p>
+                <p>这就是<b>“管理员身份运行”</b>导致的错误。因为在管理员身份运行时，程序无法读取WPS题目所在的文件夹，所以会提示“答题文件不存在”。解决方法是<b>以普通用户身份运行</b>练习程序（即正常打开程序）。</p>
+                <p>但是这样就会回到 <a href="3-1.html">3.1 “生成考卷”报错</a> 的错误……</p>
             </div>
-            <div class="scroll-offset" id="step2">
-            </div>
-            <div class="scroll-offset" id="step3">
+            <div class="scroll-offset" id="solution">
+                <h2>解决方法</h2>
+                <p>请选择 <a href="3-1.html">3.1 “生成考卷”报错</a> 的其他解决方法，例如<b>重新安装程序到其他位置</b>，就能规避这两个问题。</p>
             </div>
             <hr />
-            <p>（本章节结束）<b><a href="4.html">[下一章节]</a></b></p>
+            <p>（本章节结束）<b><a href="3-3.html">[下一章节]</a></b></p>
             <footer>
                 <p>Copyright © 2025 Dan_Evan. All rights reserved.</p>
             </footer>

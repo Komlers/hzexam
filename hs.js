@@ -17,7 +17,6 @@ document.getElementById("sidebar").innerHTML = `
     <li><a href="3-2.html">3.2 “答题文件不存在”</a></li>
     <li><a href="3-3.html">3.3 “IDLE常见问题”</a></li>
     <li><a href="3-4.html">3.4 “找不到Python”</a></li>
-    <li><a href="3-5.html">3.5 “WPS文件打不开”</a></li>
 </ul>
 <p><a href="4.html">④ 练习试题答案</a></p>
 <ul>

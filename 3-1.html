@@ -13,7 +13,7 @@
 <body>
     <!-- 标题栏 -->
     <div class="header" id="header">
-        <b><a href="https://elofhew.github.io/">Dan_Evan's Website</a></b>
+        <b><a href="https://elofhew.github.io/">DE's Website</a></b>
         <div class="header-right">
             <a href="index.html">首页</a>
             <a href="#sidebar">展开目录</a>
@@ -27,9 +27,30 @@
         <div class="markdown-body">
             <h1>3.1 “生成考卷”时报错</h1>
             <div class="scroll-offset" id="reason">
+                <h2>原因分析</h2>
+                <p>在“生成考卷”页面，如要进行模拟考试，需要生成考卷</p>
+                <img src="img/3/3-1-1.png" alt="生成考卷" />
+                <p class="pic_tip">生成考卷</p>
+                <p>但是有可能会出现报错，报错信息如下：</p>
+                <img src="img/3/3-1-2.png" alt="报错信息" />
+                <p class="pic_tip">报错信息</p>
+                <p>分析报错信息可知：<b>数据库文件被设为只读，程序没有写入权限。</b></p>
+                <p>这是因为联系系统程序被安装在了 <b>“C:\Program Files\”</b> 目录下，而该目录的权限设置默认是只读的（尤其是在WIndows10及以上系统，权限更严格），导致程序无法写入数据库文件。</p>
+            </div>
+            <div class="scroll-offset" id="solution">
+                <h2>解决方法</h2>
+                <ul>
+                    <li>重新安装练习程序，将程序安装在其他目录下（即不要安装在“C:\Program Files\”目录下）</li>
+                    <li>使用免安装版（即在其他位置打开练习程序）</li>
+                    <li>使用管理员身份运行程序（不推荐，因为会引发新的问题：<a href="3-2.html">3.2 “答题文件不存在”</a>）</li>
+                </ul>
+                <p>以上三种方法任选一种即可，<b>建议重新安装。</b></p>
+                <blockquote class="markdown-alert markdown-alert-tip">
+                    <p>其实这一部分在 <a href="1-1.html#attention">1.1 软件安装</a> 已经有提及，并且该问题仅在Windows10及以上系统才会出现，Windows7用户可忽略。</p>
+                </blockquote>
             </div>
             <hr />
-            <p>（本章节结束）<b><a href="4.html">[下一章节]</a></b></p>
+            <p>（本章节结束）<b><a href="3-2.html">[下一章节]</a></b></p>
             <footer>
                 <p>Copyright © 2025 Dan_Evan. All rights reserved.</p>
             </footer>
