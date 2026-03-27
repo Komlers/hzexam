@@ -1,5 +1,5 @@
 body {
-    font-family: "MiSans", "微软雅黑", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "微软雅黑", "Microsoft YaHei", "MiSans", "HarmonyOS Sans", "Google Sans", "PingFang SC", "Noto Sans CJK SC", "Noto Sans SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
@@ -9,6 +9,7 @@ a, a:hover, a:active, a:visited {
 
 .header {
     background-color: rgb(230, 230, 230);
+    font-family: "MiSans";
     height: 50px;
     position: fixed;
     top: 0;
@@ -88,6 +89,7 @@ a, a:hover, a:active, a:visited {
     position: fixed;
     top: 0;
     left: 0;
+    font-family: "MiSans";
     width: 220px;
     height: calc(100% - 50px);
     background-color: #f4f4f4;

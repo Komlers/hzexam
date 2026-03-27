@@ -21,7 +21,7 @@ document.getElementById("sidebar").innerHTML = `
 <p><a href="4.html">④ 练习试题答案</a></p>
 <ul>
     <li><a href="4-1.html">4.1 2024年题库答案</a></li>
-    <li><a href="4-2.html">4.2 Python试题答案</a></li>
+    <li><a href="4-2.html">4.2 2025年题库答案</a></li>
 </ul>
 `;
 
