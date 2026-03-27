@@ -23,6 +23,7 @@ document.getElementById("sidebar").innerHTML = `
     <li><a href="4-1.html">4.1 2024年题库答案</a></li>
     <li><a href="4-2.html">4.2 2025年题库答案</a></li>
 </ul>
+<p><a href="history.html">文章更新历史记录</a></p>
 `;
 
 document.addEventListener('DOMContentLoaded', function() {
