@@ -138,3 +138,55 @@ footer {
     text-align: center;
     margin: 20px 10px;
 }
+
+/* 访问量统计数字：居中、放大、加粗 */
+.count-pv {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin: 12px 0;
+    letter-spacing: 1px;
+}
+
+/* ===== 深色模式适配（文档内容以外的 UI 元素） ===== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0d1117;
+    }
+
+    .header {
+        background-color: #161b22;
+        border-bottom: #3d444d solid 1px;
+    }
+
+    .header b a, .header b a:hover, .header b a:active, .header b a:visited {
+        color: #e6edf3;
+    }
+
+    .header-right a {
+        color: #9198a1;
+        border: #9198a1 solid 1.5px;
+    }
+
+    .header-right a:hover {
+        color: #e6edf3;
+        border-color: #e6edf3;
+    }
+
+    .markdown-body a {
+        color: #4493f8;
+    }
+
+    .sidebar {
+        background-color: #161b22;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar h3 {
+        color: #e6edf3;
+    }
+
+    footer {
+        color: #9198a1;
+    }
+}

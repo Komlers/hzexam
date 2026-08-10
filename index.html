@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="doc.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script defer src="https://events.vercount.one/js"></script>
     <title>首页 - 菏泽初中信息技术考试练习系统安装教程 - Dan_Evan's Website</title>
 </head>
 
@@ -40,6 +41,11 @@
                     <p>在正式开始安装配置练习系统之前，请务必将本教程涵盖的<a href="#content">所有文档</a>全部阅读一遍，以免在安装时出现不必要的误操作或不会操作的情况。</p>
                 </u>
             </div>
+            <div class="scroll-offset" id="count">
+                <h2>统计</h2>
+                <p>当前本站的访问量为：</p>
+                <p class="count-pv"><span id="vercount_value_site_pv">加载中...</span></p>
+            </div>
             <div class="scroll-offset" id="tips">
                 <h2>提示</h2>
                 <ol>
@@ -57,33 +63,33 @@
                 <h2>目录</h2>
                 <ul>
                     <li>
-                        <a href="1.html" target="_blank">① 下载安装练习系统主程序</a>
+                        <a href="docs/1/1.html" target="_blank">① 下载安装练习系统主程序</a>
                         <ul>
-                            <li><a href="1-1.html" target="_blank">1.1 常规安装</a></li>
-                            <li><a href="1-2.html" target="_blank">1.2 免安装版</a></li>
+                            <li><a href="docs/1/1-1.html" target="_blank">1.1 常规安装</a></li>
+                            <li><a href="docs/1/1-2.html" target="_blank">1.2 免安装版</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="2.html" target="_blank">② 下载安装依赖软件</a>
+                        <a href="docs/2/2.html" target="_blank">② 下载安装依赖软件</a>
                         <ul>
-                            <li><a href="2-1.html" target="_blank">2.2 安装 Python3.4</a></li>
-                            <li><a href="2-2.html" target="_blank">2.2 安装 WPS Office</a></li>
+                            <li><a href="docs/2/2-1.html" target="_blank">2.2 安装 Python3.4</a></li>
+                            <li><a href="docs/2/2-2.html" target="_blank">2.2 安装 WPS Office</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="3.html" target="_blank">③ 一些常见问题</a>
+                        <a href="docs/3/3.html" target="_blank">③ 一些常见问题</a>
                         <ul>
-                            <li><a href="3-1.html">3.1 “生成考卷”时报错</a></li>
-                            <li><a href="3-2.html">3.2 “答题文件不存在”</a></li>
-                            <li><a href="3-3.html">3.3 “IDLE常见问题”</a></li>
-                            <li><a href="3-4.html">3.4 “找不到Python”</a></li>
+                            <li><a href="docs/3/3-1.html">3.1 “生成考卷”时报错</a></li>
+                            <li><a href="docs/3/3-2.html">3.2 “答题文件不存在”</a></li>
+                            <li><a href="docs/3/3-3.html">3.3 “IDLE常见问题”</a></li>
+                            <li><a href="docs/3/3-4.html">3.4 “找不到Python”</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="4.html" target="_blank">④ 练习试题答案</a>
+                        <a href="docs/4/4.html" target="_blank">④ 练习试题答案</a>
                         <ul>
-                            <li><a href="4-1.html" target="_blank">4.1 2024年题库答案</a></li>
-                            <li><a href="4-2.html" target="_blank">4.2 2025年题库答案</a></li>
+                            <li><a href="docs/4/4-1.html" target="_blank">4.1 2024年题库答案</a></li>
+                            <li><a href="docs/4/4-2.html" target="_blank">4.2 2025年题库答案</a></li>
                         </ul>
                     </li>
                     <li><a href="history.html" target="_blank">文章更新历史记录</a></li>
@@ -112,12 +118,33 @@
                 <p class="pic_tip">关注我的B站 :)</p>
             </div>
             <hr />
-            <p>（准备好了？）<b><a href="1.html">[从第一篇开始阅读]</a></b></p>
+            <p>（准备好了？）<b><a href="docs/1/1.html">[从第一篇开始阅读]</a></b></p>
             <footer>
                 <p>Copyright &copy 2025~2026 Dan_Evan. All rights reserved.</p>
             </footer>
         </div>
     </div>
+    <!-- 将 Vercount 访问量数字格式化为千分位 -->
+    <script>
+        (function () {
+            function formatThousands(n) {
+                return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            }
+            var el = document.getElementById('vercount_value_site_pv');
+            if (!el) return;
+            var last = el.textContent;
+            var obs = new MutationObserver(function () {
+                var raw = el.textContent;
+                if (raw === last) return;
+                last = raw;
+                var digits = raw.replace(/[^\d]/g, '');
+                if (digits) {
+                    el.textContent = formatThousands(digits);
+                }
+            });
+            obs.observe(el, { childList: true, characterData: true, subtree: true });
+        })();
+    </script>
 </body>
 
 </html>

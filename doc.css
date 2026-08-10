@@ -47,3 +47,10 @@ img {
 .button-in-text:hover {
     background-color: #3b67b5 !important;
 }
+
+/* ===== 深色模式适配 ===== */
+@media (prefers-color-scheme: dark) {
+    .pic_tip {
+        color: #9198a1;
+    }
+}
